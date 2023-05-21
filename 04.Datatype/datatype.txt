@@ -1,0 +1,88 @@
+Dart Data Types
+The data types are the most important fundamental features of programing language. In Dart, the data type of the variable is defined by its value. The variables are used to store values and reserve the memory location. The data-type specifies what type of value will be stored by the variable. Each variable has its data-type. The Dart is a static type of language, which means that the variables cannot modify.
+
+Note - Dart is static typed and types annotations language. Dart can infer a type and types annotations are optional.
+Dart supports the following built-in Data types.
+
+Number
+Strings
+Boolean
+Lists
+Maps
+Runes
+Symbols
+
+
+Dart Number
+----------------
+The Darts Number is used to store the numeric values. The number can be two types - integer and double.
+
+Integer - Integer values represent the whole number or non-fractional values. An integer data type represents the 64-bit non-decimal numbers between -263 to 263. A variable can store an unsigned or signed integer value. The example is given below -
+int marks = 80;  
+
+
+Double - Double value represents the 64-bit of information (double-precision) for floating number or number with the large decimal points. The double keyword is used to declare the double type variable.
+double pi = 3.14; 
+
+
+
+Dart Strings
+---------------
+A string is the sequence of the character. If we store the data like - name, address, special character, etc. It is signified by using either single quotes or double quotes. A Dart string is a sequence of UTF-16 code units.
+
+var msg = "Welcome to JavaTpoint";
+
+String msg1="This is static typed string";
+
+Dart Boolean
+------------------
+The Boolean type represents the two values - true and false. The bool keyword uses to denote Boolean Type. The numeric values 1 and 0 cannot be used to represent the true or false value.
+
+bool isValid = true;
+var isNotValid=false;
+
+
+
+Dart Lists
+--------------
+In Dart, The list is a collection of the ordered objects (value). The concept of list is similar to an array. An array is defined as a collection of the multiple elements in a single variable. The elements in the list are separated by the comma enclosed in the square bracket[]. The sample list is given below.
+
+var list = [1,2,3]
+
+
+Dart Maps
+---------------
+The maps type is used to store values in key-value pairs. Each key is associated with its value. The key and value can be any type. In Map, the key must be unique, but a value can occur multiple times. The Map is defined by using curly braces ({}), and comma separates each pair.
+
+var student = {'name': 'Joseph',  'age':25, 'Branch': 'Computer Science'}  
+
+
+
+Dart Runes
+----------------
+As we know that, the strings are the sequence of Unicode UTF-16 code units. Unicode is a technique which is used to describe a unique numeric value for each digit, letter, and symbol. Since Dart Runes are the special string of Unicode UTF-32 units. It is used to represent the special syntax.
+
+For example - The special heart character ♥ is equivalent to Unicode code \u2665, where \u means Unicode, and the numbers are hexadecimal integer. If the hex value is less or greater than 4 digits, it places in a curly bracket ({}). For example - An emoji 😀 is represented as \u{1f600}. The example is given below.
+
+Example -
+
+void main(){  
+    var heart_symbol = '\u2665';  
+    var laugh_symbol = '\u{1f600}';  
+    print(heart_symbol);  
+    print(laugh_symbol);  
+}  
+Output:
+
+♥
+😀
+
+
+Dart Symbols
+----------------
+The Dart Symbols are the objects which are used to refer an operator or identifier that declare in a Dart program. It is commonly used in APIs that refers to identifiers by name because an identifier name can changes but not identifier symbols.
+
+Dart Dynamic Type
+-------------------------
+Dart is an optionally typed language. If the variable type is not specified explicitly, then the variable type is dynamic. The dynamic keyword is used for type annotation explicitly.
+
